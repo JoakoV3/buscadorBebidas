@@ -27,7 +27,7 @@ export const Formulario = () => {
       }}
     >
       <fieldset className="text-center">
-        <legend>Busca bebidas por ingrediente o nombre</legend>
+        <legend>Search Drinks by Ingredients</legend>
       </fieldset>
       <div className="row">
         <div className="col-md-6">
@@ -35,7 +35,7 @@ export const Formulario = () => {
             name="nombre"
             type="text"
             className="form-control"
-            placeholder="Buscar por ingrediente"
+            placeholder="Search by Ingredient"
             onChange={obtenerDatosReceta}
           />
         </div>
@@ -44,7 +44,7 @@ export const Formulario = () => {
           <div className="d-grid gap-2">
             <input
               type="submit"
-              value="Buscar Bebidas"
+              value="Search"
               className="btn btn-block btn-danger"
             />
           </div>

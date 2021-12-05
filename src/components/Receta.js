@@ -18,10 +18,9 @@ const style = {
   maxHeight: '80vh',
   p: 4,
   content: {
-    overflow: 'scroll'
-  }
+    overflow: 'scroll',
+  },
 }
-
 
 export const Receta = ({ receta }) => {
   const [open, setOpen] = useState(false)
@@ -63,7 +62,7 @@ export const Receta = ({ receta }) => {
             type="button"
             className="btn btn-block btn-danger"
           >
-            Ver Receta
+            See Recipe
           </button>
         </div>
       </div>
@@ -79,11 +78,11 @@ export const Receta = ({ receta }) => {
       >
         <Box sx={style}>
           <h2>{informacion.strDrink}</h2>
-          <h3 className="mt-3">Instrucciones</h3>
+          <h3 className="mt-3">Instructions</h3>
           <p>{informacion.strInstructions}</p>
 
           <img src={informacion.strDrinkThumb} className="img-fluid my-3" />
-          <h3>Ingredientes</h3>
+          <h3>Ingredients</h3>
           <ul>{mostrarIngredientes(informacion)}</ul>
         </Box>
       </Modal>

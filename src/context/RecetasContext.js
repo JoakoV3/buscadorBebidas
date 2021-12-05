@@ -17,7 +17,7 @@ const RecetasProvider = (props) => {
         const resultado = await axios.get(url)
         console.log(resultado);
         if(resultado.data == "") {
-          alert('no se encontraron resultados')
+          alert('Cannot find any drink with that ingredient. Try search something else!')
           return
         }
         guardarRecetas(resultado.data.drinks)
